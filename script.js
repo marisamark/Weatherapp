@@ -1,26 +1,27 @@
 $(document).ready(function () {
-    console.log("Here!")
+    console.log("Here!");
 
 });
-// ======== Local Storage ========
-function getLocal() {
-}
-
-function saveLocal(city, input) {
-    localStorage.setItem(city, input)
-}
 
 // ======== Handling Click ========
 function saveInfo() {
     console.log(this)
     city = $(this).attr("data-city")
     var input = $(city).text()
-    saveLocal(city,input)    
+    setLocal(city,input)    
 }
 
 // ===== Appending cities searched ======
 
 function appendcitylist(city) {
-    var cityDiv = $("#citylist")
+    var cityDiv = $("#citylist").text()
         $("#citylist").append($(`<div>${city}</div>`));
-    }
+        }
+
+// ======== Local Storage ========
+
+function getLocal(city,input) {
+    var cityDivdata = localStorage.getItem('cityDiv');
+    localStorage.getItem(city, input)
+    console.log(getLocal())
+}

@@ -1,1 +1,3 @@
 # Weatherapp
+
+This Weather app allows a user to search the name of a city in the U.S. and find out the current weather conditions such as the temperature in degrees Farenheit, humidity percentage, and windspeed in mph. The page also loads the upcoming 5-day forecast which displays the date, forecasted temperature and humidity. Each day also includes an icon which illustrates the type of weather forecasted for each day. The user's search history also is saved under the search bar. 
